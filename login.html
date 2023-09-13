@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="main flex-column">
+      <div class="login border">
+        <h3>Login</h3>
+        <form
+          class="mt-5"
+          id="loginForm"
+          onsubmit="return validateForm()"
+          novalidate
+        >
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">
+              Email address
+            </label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+            <span id="error" class="text-danger"></span>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">
+              Password
+            </label>
+            <div class="input-group">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Enter your password"
+                id="password"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="showPasswordBtn"
+                onclick="togglePasswordVisibility()"
+              >
+                Show
+              </button>
+            </div>
+          </div>
+          <div class="mb-3 d-flex">
+            <p>Don't have an Account</p>
+            <a href="./signup.html" class="ms-2">Signup</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+
+  <script></script>
+</html>
